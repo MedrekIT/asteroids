@@ -1,0 +1,1 @@
+Game project from the course on [Boot.dev](https://boot.dev)
