@@ -26,7 +26,13 @@ if __name__ == '__main__':
                 running = False
         screen.fill("black")
         updatable.update(dt)
+        for asteroid in asteroids:
+            if asteroid.collision(player):
+                print("Game over!")
+                running = False
+
         for object in drawable:
             object.draw(screen)
+
         pygame.display.flip()
         dt = clock.tick(60) / 1000
